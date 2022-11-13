@@ -7,8 +7,8 @@ class TestVarasto(unittest.TestCase):
         self.varasto = Varasto(10)
 
     def test_luo_varasto_väärällä_tilavuudella(self):
-        self.varasto2 = Varasto(-10)
-        self.assertAlmostEqual(self.varasto2.tilavuus, 0)
+        self.varasto2 = Varasto(-5)
+        self.assertAlmostEqual(self.varasto2.tilavuus, 5)
 
     def test_luo_varasto_väärällä_saldolla(self):
         self.varasto2 = Varasto(10, -10)
